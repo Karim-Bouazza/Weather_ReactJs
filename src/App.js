@@ -1,16 +1,9 @@
-import "./App.css";
-import Form from "./Form";
+import { ListToDo } from './Components/ListToDo';
+import { ListContext } from './Context/ListContext';
+import { useState } from 'react';
 
-const App = () => {
+export default function App() {
   return (
-    <div className="container">
-      <div className="sub-container">
-        <h1 style={{paddingBottom: "10px"}}>Requesting Form</h1>
-        <hr></hr>
-        <Form />
-      </div>
-    </div>
-  );
-};
-
-export default App;
+        <ListToDo />
+  ) 
+}

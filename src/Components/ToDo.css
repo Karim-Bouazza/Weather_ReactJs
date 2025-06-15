@@ -1,0 +1,35 @@
+.containerTask {
+  background: rgb(70, 0, 176);
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.icon {
+  transition: all 0.1s;
+}
+
+.icon:hover {
+    background: rgba(255, 255, 255, 0.85) !important;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
+}
+
+.containerTask {
+    transition: all 0.2s;
+}
+
+.check {
+  border: 2px solid green !important;
+}
+
+
+.create {
+  border: 2px solid blue !important;
+}
+.delete {
+  border: 2px solid red !important;
+}
