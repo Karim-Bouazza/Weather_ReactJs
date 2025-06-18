@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: #333;
-}
+} */
 
 .center {
   display: flex;
@@ -20,7 +20,7 @@ body {
 
 .containerBox {
   width: 400px;
-  height: 500px;
+  max-height: 500px;
   overflow-y: scroll;
   scrollbar-width: none; 
   background-color: white;

@@ -1,9 +1,15 @@
-import { ListToDo } from './Components/ListToDo';
-import { ListContext } from './Context/ListContext';
-import { useState } from 'react';
+import ListToDo from "./Components/ListToDo";
+import ReduceList from "./Context/ReduceContext";
+import { SnackProvider } from "./Context/SnackContext";
 
 export default function App() {
   return (
-        <ListToDo />
-  ) 
+    <>
+      <SnackProvider >
+        <ReduceList>
+          <ListToDo/>
+        </ReduceList>
+      </SnackProvider>
+    </>
+  );
 }
