@@ -1,15 +1,22 @@
-import ListToDo from "./Components/ListToDo";
-import ReduceList from "./Context/ReduceContext";
-import { SnackProvider } from "./Context/SnackContext";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import './App.css';
+import CardWeather from './Components/CardWeather';
+import Container from '@mui/material/Container';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: ["IBM"],
+  }
+})
 
 export default function App() {
   return (
-    <>
-      <SnackProvider >
-        <ReduceList>
-          <ListToDo/>
-        </ReduceList>
-      </SnackProvider>
-    </>
+    <ThemeProvider theme={theme}>
+        <div className="centerInContainer" style={{height: "100vh"}}>
+          <Container maxWidth="sm" className="container">
+            <CardWeather/>
+          </Container>
+        </div>
+    </ThemeProvider>
   );
 }
